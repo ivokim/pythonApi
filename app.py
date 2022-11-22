@@ -9,6 +9,7 @@ app = Flask(__name__)
 
 database = dict()
 database['ALUNO'] = []
+database['PROFESSOR'] = []
 
 @app.route('/ola')
 def ola():
