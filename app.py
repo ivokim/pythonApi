@@ -2,7 +2,7 @@
 #Luiz Léis Rioja Silva
 #Rafael Duram Santos
 #Sergio Antonio Silva Junior
-
+#Fabricio Batista
 from flask import Flask, jsonify, request
 
 app = Flask(__name__)
