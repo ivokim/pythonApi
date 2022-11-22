@@ -10,9 +10,13 @@ app = Flask(__name__)
 database = dict()
 database['ALUNO'] = []
 
-@app.route('/ola')
-def ola():
-    return 'ola mundo...'
+@app.route('/alunos')
+def alunos():
+    return jsonify(database['ALUNO'])
+
+@app.route('/professores')
+def professores():
+    return jsonify(database['PROFESSOR'])
 
 
 @app.route('/alunos/<string:Nome>', methods=['POST'])
